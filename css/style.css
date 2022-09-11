@@ -1,9 +1,50 @@
+/* Font Family + Style main */
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 body {
   font-family: 'Montserrat', sans-serif; }
 
 main {
   background-image: linear-gradient(to bottom, #dfdace, #f3f3f3); }
+
+/* CSS Header */
+
+#navbarSupportedContent a {
+  font-weight: bold;
+  color: #3f3f3f; }
+#navbarSupportedContent a:hover {
+  color: orange; }
+
+#navbarSupportedContent button {
+  border-radius: 15px;
+  font-weight: bold; }
+
+.form-control {
+  font-size: 15px;
+  border-radius: 15px; }
+
+.carousel-inner img {
+  height: 60vh; }
+
+header form input, .boton {
+  height: 30px; }
+
+/* CSS Footer */
+
+footer {
+  background-color: #3f3f3f;
+  min-height: 100px; }
+
+footer p {
+  color: #f3f3f3;
+  text-align: center; }
+
+.iconos i {
+  font-size: 30px;
+  padding: 0 10px;
+  color: #f3f3f3; }
+
+/* CSS Main-index */
 
 .titulo {
   font-weight: bold;
@@ -13,9 +54,10 @@ main {
   width: 100%;
   height: 300px;
   border-radius: 25px; }
-  #galeria img:hover {
-    transform: scale(1.05);
-    transition: 0.3s; }
+
+#galeria img:hover {
+  transform: scale(1.05);
+  transition: 0.3s; }
 
 #galeria .col-lg-4 {
   padding: 25px; }
@@ -33,20 +75,28 @@ main {
 #destacados .col-lg-6 {
   padding: 30px; }
 
+/* CSS Main-productos */
+
 #productos .card:hover {
   transform: scale(1.05);
   transition: 0.3s; }
 
+/* CSS Main-contacto */
+
 #formulario {
   min-height: 75vh; }
-  #formulario .button {
-    border-radius: 15px; }
+
+#formulario .button {
+  border-radius: 15px; }
+
+/* CSS Main-blog */
 
 #blog img {
   width: 100%;
   height: 300px; }
-  #blog img:hover {
-    border: 5px solid #f7f7f7; }
+
+#blog img:hover {
+  border: 5px solid #f7f7f7; }
 
 #blog iframe {
   width: 100%;
@@ -55,37 +105,26 @@ main {
 #blog .col-lg-4 {
   padding: 30px; }
 
+/* CSS Main-faq */
+
 #FAQ {
   min-height: 75vh; }
 
-#navbarSupportedContent a {
-  font-weight: bold;
-  color: #3f3f3f; }
-  #navbarSupportedContent a:hover {
-    color: orange; }
 
-#navbarSupportedContent button {
-  border-radius: 15px;
-  font-weight: bold; }
+/* MOBILE Media Query Index */
 
-.form-control {
-  font-size: 15px;
-  border-radius: 15px; }
+@media (max-width: 780px) {
+  .carousel-item {
+   height: 40vh; } }
 
-.carousel-inner img {
-  height: 60vh; }
+  
+@media (max-width: 400px) {
+  .carousel-item {
+    height: 25vh; }
 
-header form input, .boton {
-  height: 30px; }
+  .carousel-item img {
+    height: 100% !important; }
 
-footer {
-  background-color: #3f3f3f;
-  min-height: 100px; }
-  footer p {
-    color: #f3f3f3;
-    text-align: center; }
-
-.iconos i {
-  font-size: 30px;
-  padding: 0 10px;
-  color: #f3f3f3; }
+  #destacados img {
+    width: 100%;
+    height: 250px; } }
